@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeToggler from "./ThemeToggler";
+import logo from "../assets/images/techmind-logo.png";
 
 function Header() {
   return (
@@ -9,7 +10,15 @@ function Header() {
         {/* Navbar */}
         <div className="navbar bg-base-100">
           <div className="flex-1">
-            <a className="btn btn-ghost text-xl">TechMinds</a>
+            {/* Logo and TechMinds name */}
+            <a className="btn btn-ghost normal-case text-xl flex items-center space-x-2">
+              <img
+                src={logo}
+                alt="TechMinds Logo"
+                className="w-8 h-8 object-contain"
+              />
+              <span>TechMinds</span>
+            </a>
           </div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal px-1">
@@ -36,9 +45,8 @@ function Header() {
                 </details>
               </li>
               <li></li>
-                <ThemeToggler />
+              <ThemeToggler />
               <li></li>
-              
             </ul>
           </div>
           {/* Burger icon for mobile */}
@@ -73,7 +81,6 @@ function Header() {
           <li>
             <a>Services</a>
           </li>
-
           <li>
             <a>Contact</a>
           </li>
@@ -90,7 +97,6 @@ function Header() {
               </ul>
             </details>
           </li>
-
           <li></li>
           <ThemeToggler />
         </ul>

@@ -12,6 +12,10 @@ const TUICard = ({ title, points }) => {
             </li>
           ))}
         </ul>
+        <div className="card-actions justify-end mt-4">
+          <button className="btn btn-primary btn-sm">Enroll Now</button>
+          <button className="btn btn-outline btn-sm">Read More</button>
+        </div>
       </div>
     </div>
   );
