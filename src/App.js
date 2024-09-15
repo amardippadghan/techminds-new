@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import AnimatedCursor from "react-animated-cursor";
 import { useSelector } from "react-redux";
-import TUICard from "./components/commons/TUICard";
-import TUICourseCard from "./components/commons/TUICourseCard";
 import Footer from "./components/Footer";
+import Overview from './components/Overview/Overview';
 
 
 
@@ -64,16 +64,11 @@ function App() {
       />
 
       <Header />
-      <div className="p-4">
-        <TUICard title={cardData.title} points={cardData.points} />
-      </div>
-      <div className="p-4">
-        <TUICourseCard
-          image="https://img.freepik.com/free-vector/illustrated-webinar-banner-invitation-template_23-2148758920.jpg?t=st=1726407439~exp=1726411039~hmac=135958ab558198571cda7b02ea46dc8d9bcd3870e4a6606cd2eb3c18458473da&w=996"
-          courseName="Introduction to React"
-          description="Learn the fundamentals of React and build modern web applications."
-        />
-      </div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Overview />} />
+        </Routes>
+        </Router>
       <Footer />
     </>
   );
