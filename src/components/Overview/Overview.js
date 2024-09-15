@@ -2,22 +2,17 @@
 
 import React from 'react';
 import Overviewimg from '../../assets/images/Overview1.webp';
-import { useSelector } from 'react-redux';
 
 const Overview = () => {
-
-    const textColor = useSelector((state) => state.theme.textColor);
-    const subTextColor = useSelector((state) => state.theme.subTextColor);
-
     return (
         <div className='p-4 bg-base-200 min-h-screen'>
             <div className="flex flex-col lg:flex-row items-center justify-between">
                 {/* Left Side */}
                 <div className="lg:w-1/2 p-4 text-center lg:text-left">
-                    <h1 className={`text-3xl lg:text-4xl font-bold ${textColor} mb-4`}>
+                    <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
                         Online MERN Stack Development and Salesforce Courses
                     </h1>
-                    <p className={`${subTextColor} text-lg`}>
+                    <p className="text-lg text-secondary">
                         Elevate your skills with our comprehensive online courses on MERN Stack Development and Salesforce.
                     </p>
                 </div>
@@ -33,10 +28,10 @@ const Overview = () => {
             </div>
             {/* About TMIH */}
             <div className='p-4'>
-                <h2 className={`text-2xl font-bold ${textColor} text-center mb-4`}>
+                <h2 className="text-2xl font-bold text-primary text-center mb-4">
                     About Tech Mind It Hub Online MERN Stack Development and Salesforce
                 </h2>
-                <p className={` text-center ${subTextColor}`}>
+                <p className="text-secondary text-center">
                     Tech Mind It Hub is an innovative online learning platform designed to provide high-quality education
                     and training in the latest technology fields. It focuses on empowering individuals with practical skills and
                     knowledge that can lead to successful careers in software development and enterprise solutions.
