@@ -23,23 +23,29 @@ function Footer() {
       </aside>
       <nav>
         <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <a className="link link-hover">A certificate will be provided upon completing the course.
+        </a>
+        <a className="link link-hover">Guest lecture by an experienced person.
+        </a>
+        <a className="link link-hover">Our team will be available to resolve queries at any time.
+        </a>
+      
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <h6 className="footer-title">Courses</h6>
+        <a className="link link-hover">Frontend Developmet</a>
+        <a className="link link-hover">Backend Developmet</a>
+        <a className="link link-hover">MERN Stack Developmet</a>
+        <a className="link link-hover">Salesforce</a>
+        <a className="link link-hover">CRM training</a>
+        <a className="link link-hover">Salesforce + CRM training </a>
+
       </nav>
       <nav>
-        <h6 className="footer-title">Legal</h6>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+        <h6 className="footer-title">Contact Us</h6>
+        <a className="link link-hover">Phone No :</a>
+        <a className="link link-hover">Email : </a>
+
       </nav>
     </footer>
   );
