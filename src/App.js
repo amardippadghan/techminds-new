@@ -4,10 +4,12 @@ import AnimatedCursor from "react-animated-cursor";
 import { useSelector } from "react-redux";
 import TUICard from "./components/commons/TUICard";
 import TUICourseCard from "./components/commons/TUICourseCard";
+import Footer from "./components/Footer";
 
 
 
 function App() {
+ 
 
    const cardData = {
      title: "CS Fundamentals and Full-Stack Skills",
@@ -30,7 +32,7 @@ function App() {
       <AnimatedCursor
         innerSize={6} // Reduced inner size
         outerSize={10} // Reduced outer size
-        color={theme === "dark" ? "255, 255, 255" : "0, 0, 0"}
+        color="128, 128, 128 "
         outerAlpha={0.3}
         innerScale={0.7} // Reduced inner scale
         outerScale={4} // Reduced outer scale
@@ -72,6 +74,7 @@ function App() {
           description="Learn the fundamentals of React and build modern web applications."
         />
       </div>
+      <Footer />
     </>
   );
 }
