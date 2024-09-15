@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
-import AnimatedCursor from "react-animated-cursor";
 import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Overview from './components/Overview/Overview';
