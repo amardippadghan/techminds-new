@@ -72,8 +72,8 @@ function Header() {
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 bg-base-100">
-          <li>
-            <a>Courses</a>
+          <li >
+            <a className="hover:bg-[#47025c]">Courses</a>
           </li>
           <li>
             <a>Services</a>
