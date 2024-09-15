@@ -23,17 +23,11 @@ function Header() {
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Courses</a>
-              </li>
-              <li>
-                <a>Services</a>
-              </li>
-              <li>
-                <a>Contact</a>
+                <a>Overview</a>
               </li>
               <li>
                 <details>
-                  <summary>Parent</summary>
+                  <summary>Courses</summary>
                   <ul className="bg-base-100 rounded-t-none p-2">
                     <li>
                       <a>Link 1</a>
@@ -44,6 +38,9 @@ function Header() {
                   </ul>
                 </details>
               </li>
+              <li>
+              <a>Contact</a>
+            </li>
               <li></li>
               <ThemeToggler />
               <li></li>
