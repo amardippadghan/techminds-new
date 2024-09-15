@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../redux/slices/themeSlice";
+import { theme as themeColor  } from "../constant/theme";
 
 function ThemeToggler() {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ function ThemeToggler() {
         type="checkbox"
         className="theme-controller"
         onChange={handleThemeChange}
-        checked={theme === "dark"} 
+        checked={theme === themeColor.dark}
       />
 
       {/* Sun icon */}
