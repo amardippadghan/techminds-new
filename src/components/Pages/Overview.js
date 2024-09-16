@@ -1,5 +1,3 @@
-// src/components/Overview.js
-
 import React from 'react';
 import Overviewimg from '../../assets/images/Overview2.webp';
 import TUICard from '../commons/TUICard';
@@ -7,34 +5,49 @@ import { useSelector } from 'react-redux';
 import TUICarousel from '../commons/TUICorousal';
 import CoursesPage from './CoursesPage';
 
+// Import the images
+import htmlimg from "../../assets/images/html.jpeg";
+import cssimg from "../../assets/images/css.jpeg";
+import tailwindimg from "../../assets/images/tailwindcss.png"; 
+import jsimg from "../../assets/images/js.jpeg";
+import reactimg from "../../assets/images/reactjs.png";
+import reduximg from "../../assets/images/redux.jpeg";
+import nodeimg from "../../assets/images/nodejs.jpeg";
+import mongodbimg from "../../assets/images/mongodb.jpeg";
+import mongooseimg from "../../assets/images/mongoose.jpg";
+import postmanimg from "../../assets/images/postman.jpeg";
+import vsimg from "../../assets/images/vscode.png";
+import salesforceimg from "../../assets/images/sf.png";
+
 const Overview = () => {
     const theme = useSelector((state) => state.theme.theme);
 
-
+    // Add images to techItems array
     const techItems = [
-        { title: "Tailwind CSS", image: "/path/to/tailwind-logo.png" },
-        { title: "JavaScript", image: "/path/to/javascript-logo.png" },
-        { title: "React JS", image: "/path/to/react-logo.png" },
-        { title: "Next JS", image: "/path/to/nextjs-logo.png" },
-        { title: "Redux", image: "/path/to/redux-logo.png" },
-        { title: "Node JS", image: "/path/to/nodejs-logo.png" },
-        { title: "MongoDB", image: "/path/to/mongodb-logo.png" },
-        { title: "Git", image: "/path/to/git-logo.png" },
-        { title: "Docker", image: "/path/to/docker-logo.png" },
-        { title: "Figma", image: "/path/to/figma-logo.png" },
-        { title: "AdobeXD", image: "/path/to/adobexd-logo.png" },
-        { title: "Sketch", image: "/path/to/sketch-logo.png" },
-        { title: "Adobe Photoshop", image: "/path/to/adobephotoshop-logo.png" },
+        { title: "HTML", image: htmlimg },
+        { title: "CSS", image: cssimg },
+        { title: "Tailwind CSS", image: tailwindimg },
+        { title: "JavaScript", image: jsimg },
+        { title: "React JS", image: reactimg },
+        { title: "Redux", image: reduximg },
+        { title: "Node JS", image: nodeimg },
+        { title: "MongoDB", image: mongodbimg },
+        { title: "Mongoose", image: mongooseimg },
+        { title: "Postman", image: postmanimg },
+        { title: "Vs code", image: vsimg },
+        { title: "Salesforce", image: salesforceimg },
     ];
+
     return (
         <div className='p-4 bg-base-200 min-h-screen'>
-            <div className="flex flex-col lg:flex-row items-center justify-between mb-4">
+            <div className="flex flex-col lg:flex-row items-center justify-between mb-7">
                 {/* Left Side */}
                 <div className="w-full lg:w-1/2 p-4 text-center lg:text-left ml-5">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4">
+                    <h2 className="text-xl md:text-2xl font-bold mb-4">Welcome to Tech Mind It Hub: Elevate Your Skills!</h2>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-4">
                         Online MERN Stack Development and Salesforce Courses
                     </h1>
-                    <p className="text-base md:text-lg text-secondary">
+                    <p className="text-base md:text-lg ">
                         Elevate your skills with our comprehensive online courses on MERN Stack Development and Salesforce.
                     </p>
                 </div>
@@ -49,19 +62,20 @@ const Overview = () => {
                 </div>
             </div>
             {/* About TMIH */}
-            <div className='p-4 mb-4'>
-                <h2 className="text-xl md:text-2xl font-bold text-primary text-center mb-4">
-                    About Tech Mind It Hub Online MERN Stack Development and Salesforce
-                </h2>
-                <p className="text-base md:text-lg text-secondary text-center">
-                    Tech Mind It Hub is an innovative online learning platform designed to provide high-quality education
-                    and training in the latest technology fields. It focuses on empowering individuals with practical skills and
-                    knowledge that can lead to successful careers in software development and enterprise solutions.
-                    The platform offers a variety of courses tailored to meet industry standards and help learners stay ahead in the tech world.
-                </p>
-            </div>
+            <div className='p-4 mb-4' style={{ backgroundColor: "#240133" }}>
+            <h2 className="text-xl md:text-2xl font-bold text-center mb-4 text-white">
+                About Tech Mind It Hub Online MERN Stack Development and Salesforce
+            </h2>
+            <p className="text-base md:text-lg text-center text-white">
+                Tech Mind It Hub is an innovative online learning platform designed to provide high-quality education
+                and training in the latest technology fields. It focuses on empowering individuals with practical skills and
+                knowledge that can lead to successful careers in software development and enterprise solutions.
+                The platform offers a variety of courses tailored to meet industry standards and help learners stay ahead in the tech world.
+            </p>
+        </div>
+        
             {/* Cards */}
-            <div className="flex flex-col md:flex-row justify-center gap-4 mb-7">
+            <div className="flex flex-col md:flex-row justify-center gap-7 mb-7">
                 <TUICard
                     title="Our Services"
                     points={[
@@ -101,12 +115,12 @@ const Overview = () => {
                 />
             </div>
             {/* CoursesPage */}
-           <div p-4 mb-7>
-           <CoursesPage />
-           </div>
-            {/* Cards End */}
+            <div p-4 mb-7>
+                <CoursesPage />
+            </div>
+            {/* Tools Covered */}
             <div className="p-4 mb-7">
-                <h2 className="text-xl md:text-2xl font-bold text-primary text-center mb-4">
+                <h2 className="text-xl md:text-2xl font-bold  text-center mb-4">
                     Tools Covered
                 </h2>
                 <TUICarousel items={techItems} />

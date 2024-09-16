@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./TUIButton.css";
 
 const TUIButton = ({
   text,
   onClick,
   type = "button",
-  className = "btn btn-info",
+  className = " custom-button", // Added custom-button class
 }) => {
   return (
     <button

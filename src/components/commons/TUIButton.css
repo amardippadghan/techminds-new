@@ -1,0 +1,46 @@
+.custom-button {
+    --color: #240133;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: white; /* Initial text color is white */
+    background-color: var(--color); /* Initial background color is #240133 */
+    border: 2px solid var(--color); /* Border color is #240133 */
+    border-radius: 6px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .custom-button::before {
+    position: absolute;
+    content: "";
+    background: white; /* Circle background starts as white */
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .custom-button:hover {
+    color: var(--color); /* Text color becomes #240133 on hover */
+    background-color: white; /* Background becomes white on hover */
+  }
+  
+  .custom-button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  .custom-button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  

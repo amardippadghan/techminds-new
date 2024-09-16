@@ -1,6 +1,6 @@
 import React from "react";
 import ThemeToggler from "./ThemeToggler";
-import logo from "../assets/images/techmind-logo.png";
+import logo from "../assets/images/TMIH_LOGO_Black_icon.png";
 
 function Header() {
   return (
@@ -8,39 +8,45 @@ function Header() {
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Navbar */}
-        <div className="navbar bg-base-100">
+        <div className="navbar" style={{ backgroundColor: "#240133" }}>
           <div className="flex-1">
             {/* Logo and TechMinds name */}
-            <a className="btn btn-ghost normal-case text-xl flex items-center space-x-2">
+            <a className="btn btn-ghost normal-case text-xl flex items-center space-x-2 text-white">
               <img
                 src={logo}
-                alt="TechMinds Logo"
-                className="w-8 h-8 object-contain"
+                alt="Tech Minds It Hub"
+                className="w-16 h-14 object-contain"
               />
-              <span>TechMinds</span>
+              <span>Tech Minds It Hub</span>
             </a>
           </div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Overview</a>
+                <a className="text-white hover:bg-white hover:text-[#240133]">
+                  Overview
+                </a>
               </li>
               <li>
                 <details>
-                  <summary>Courses</summary>
+                  <summary className="text-white hover:bg-white hover:text-[#240133]">
+                    Courses
+                  </summary>
                   <ul className="bg-base-100 rounded-t-none p-2">
                     <li>
-                      <a>Link 1</a>
+                      <a className="hover:bg-[#47025c]">Link 1</a>
                     </li>
                     <li>
-                      <a>Link 2</a>
+                      <a className="hover:bg-[#47025c]">Link 2</a>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-              <a>Contact</a>
-            </li>
+                <a className="text-white hover:bg-white hover:text-[#240133]">
+                  Contact
+                </a>
+              </li>
               <li></li>
               <ThemeToggler />
               <li></li>
@@ -51,7 +57,7 @@ function Header() {
             <label htmlFor="my-drawer" className="btn btn-square btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -71,25 +77,27 @@ function Header() {
       {/* Drawer content */}
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 bg-base-100">
-          <li >
-            <a className="hover:bg-[#47025c]">Courses</a>
+        <ul className="menu p-4 w-80" style={{ backgroundColor: "#240133" }}>
+          <li>
+            <a className="text-white hover:bg-white hover:text-[#240133]">Courses</a>
           </li>
           <li>
-            <a>Services</a>
+            <a className="text-white hover:bg-white hover:text-[#240133]">Services</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a className="text-white hover:bg-white hover:text-[#240133]">Contact</a>
           </li>
           <li>
             <details>
-              <summary>Parent</summary>
+              <summary className="text-white hover:bg-white hover:text-[#240133]">
+                Parent
+              </summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 <li>
-                  <a>Link 1</a>
+                  <a className="hover:bg-[#47025c]">Link 1</a>
                 </li>
                 <li>
-                  <a>Link 2</a>
+                  <a className="hover:bg-[#47025c]">Link 2</a>
                 </li>
               </ul>
             </details>
