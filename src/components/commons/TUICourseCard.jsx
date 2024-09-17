@@ -1,7 +1,7 @@
 import React from "react";
 import TUIButton from './TUIButton';
 
-const TUICourseCard = ({ image, courseName, description,pointCourse }) => {
+const TUICourseCard = ({ image, courseName, description, pointCourse }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-400 border border-purple-400  rounded-lg">
       <figure className="overflow-hidden rounded-t-sm">
@@ -21,11 +21,16 @@ const TUICourseCard = ({ image, courseName, description,pointCourse }) => {
             </li>
           ))}
         </ul>
-        <div className="card-actions justify-end mt-4">
-        <TUIButton text="Enroll Now" />
-        <TUIButton text="Read More" />
-      </div>
-      
+        <div className="card-actions flex justify-center">
+          <div>
+            <TUIButton text="Enroll Now" />
+          </div>
+          <div>
+            <TUIButton text="Read More" />
+          </div>
+
+        </div>
+
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 
 export const theme = {
-    light: "light",
+    light: "night",
     dark: "night",
 }
 

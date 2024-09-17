@@ -8,7 +8,7 @@ import CoursesPage from './CoursesPage';
 // Import the images
 import htmlimg from "../../assets/images/html.jpeg";
 import cssimg from "../../assets/images/css.jpeg";
-import tailwindimg from "../../assets/images/tailwindcss.png"; 
+import tailwindimg from "../../assets/images/tailwindcss.png";
 import jsimg from "../../assets/images/js.jpeg";
 import reactimg from "../../assets/images/reactjs.png";
 import reduximg from "../../assets/images/redux.jpeg";
@@ -18,6 +18,7 @@ import mongooseimg from "../../assets/images/mongoose.jpg";
 import postmanimg from "../../assets/images/postman.jpeg";
 import vsimg from "../../assets/images/vscode.png";
 import salesforceimg from "../../assets/images/sf.png";
+import TUIButton from '../commons/TUIButton';
 
 const Overview = () => {
     const theme = useSelector((state) => state.theme.theme);
@@ -40,7 +41,7 @@ const Overview = () => {
 
     return (
         <div className='p-4 bg-base-200 min-h-screen'>
-            <div className="flex flex-col lg:flex-row items-center justify-between mb-7">
+            <div className="flex flex-col lg:flex-row items-center justify-between mb-6">
                 {/* Left Side */}
                 <div className="w-full lg:w-1/2 p-4 text-center lg:text-left ml-5">
                     <h2 className="text-xl md:text-2xl font-bold mb-4">Welcome to Tech Mind It Hub: Elevate Your Skills!</h2>
@@ -50,6 +51,10 @@ const Overview = () => {
                     <p className="text-base md:text-lg ">
                         Elevate your skills with our comprehensive online courses on MERN Stack Development and Salesforce.
                     </p>
+                   <div className='flex' style={{gap : "10px"}}>
+                   <TUIButton text="Explore Courses"/>
+                   <TUIButton text="Demo Registration"/>
+                   </div>
                 </div>
 
                 {/* Right Side */}
@@ -62,20 +67,20 @@ const Overview = () => {
                 </div>
             </div>
             {/* About TMIH */}
-            <div className='p-4 mb-4' style={{ backgroundColor: "#240133" }}>
-            <h2 className="text-xl md:text-2xl font-bold text-center mb-4 text-white">
-                About Tech Mind It Hub Online MERN Stack Development and Salesforce
-            </h2>
-            <p className="text-base md:text-lg text-center text-white">
-                Tech Mind It Hub is an innovative online learning platform designed to provide high-quality education
-                and training in the latest technology fields. It focuses on empowering individuals with practical skills and
-                knowledge that can lead to successful careers in software development and enterprise solutions.
-                The platform offers a variety of courses tailored to meet industry standards and help learners stay ahead in the tech world.
-            </p>
-        </div>
-        
+            <div className='p-4 mb-10' style={{ backgroundColor: "#240133" }}>
+                <h2 className="text-xl md:text-2xl font-bold text-center mb-4 text-white">
+                    About Tech Mind It Hub Online MERN Stack Development and Salesforce
+                </h2>
+                <p className="text-base md:text-lg text-center text-white">
+                    Tech Mind It Hub is an innovative online learning platform designed to provide high-quality education
+                    and training in the latest technology fields. It focuses on empowering individuals with practical skills and
+                    knowledge that can lead to successful careers in software development and enterprise solutions.
+                    The platform offers a variety of courses tailored to meet industry standards and help learners stay ahead in the tech world.
+                </p>
+            </div>
+
             {/* Cards */}
-            <div className="flex flex-col md:flex-row justify-center gap-7 mb-7">
+            <div className="flex flex-col md:flex-row justify-center gap-7 mb-10">
                 <TUICard
                     title="Our Services"
                     points={[
@@ -115,14 +120,15 @@ const Overview = () => {
                 />
             </div>
             {/* CoursesPage */}
-            <div p-4 mb-7>
+            <div p-4 mb-10>
                 <CoursesPage />
             </div>
             {/* Tools Covered */}
             <div className="p-4 mb-7">
-                <h2 className="text-xl md:text-2xl font-bold  text-center mb-4">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-4 items-center text-center">
                     Tools Covered
-                </h2>
+                </h1>
+
                 <TUICarousel items={techItems} />
             </div>
         </div>

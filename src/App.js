@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
 import Overview from "./components/Pages/Overview";
 import ContactUs from './components/Pages/ContactUs';
+import DemoRegisterForm from './components/Forms/DemoRegisterForm';
 
 function App() {
   const theme = useSelector((state) => state.theme.theme);
@@ -21,6 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Overview />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/demoregisterform" element={<DemoRegisterForm />} />
+
 
         </Routes>
       </Router>

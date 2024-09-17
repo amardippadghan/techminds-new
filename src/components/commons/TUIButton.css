@@ -2,12 +2,12 @@
     --color: #240133;
     font-family: inherit;
     display: inline-block;
-    width: 6em;
+    width: 100%;
     height: 2.6em;
     line-height: 2.5em;
     overflow: hidden;
     cursor: pointer;
-    margin: 20px;
+
     font-size: 17px;
     z-index: 1;
     color: white; /* Initial text color is white */
@@ -22,7 +22,7 @@
     position: absolute;
     content: "";
     background: white; /* Circle background starts as white */
-    width: 150px;
+    width: 100%;
     height: 200px;
     z-index: -1;
     border-radius: 50%;

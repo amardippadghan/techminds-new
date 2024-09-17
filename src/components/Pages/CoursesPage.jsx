@@ -22,7 +22,7 @@ const courses = [
   },
   {
     image: mern,
-    courseName: 'MERN Stack',
+    courseName: 'MERN Stack Development',
     description: 'Master MongoDB, Express, React, and Node.js to build full-stack applications.',
     pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 7000'],
   },
@@ -49,9 +49,9 @@ const courses = [
 const CoursesPage = () => {
   return (
     <div className=''>
-      <h2 className="text-xl md:text-2xl font-bold text-primary text-center mb-2">
+    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-4 items-center text-center">
         Courses
-      </h2>
+      </h1>
       <div className="flex justify-center flex-wrap gap-10 p-4">
         {courses.map((course, index) => (
           <TUICourseCard

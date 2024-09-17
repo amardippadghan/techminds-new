@@ -5,12 +5,12 @@ const TUIButton = ({
   text,
   onClick,
   type = "button",
-  className = " custom-button", // Added custom-button class
+  className = "custom-button",
 }) => {
   return (
     <button
       type={type}
-      className={`${className} hover:bg-info hover:text-white transition-all duration-300 ease-in-out`}
+      className={`${className} responsive-button`}
       onClick={onClick}
     >
       {text}

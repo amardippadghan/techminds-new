@@ -15,7 +15,7 @@ function Header() {
               <img
                 src={logo}
                 alt="Tech Minds It Hub"
-                className="w-16 h-14 object-contain"
+                className="w-10 h-14 object-contain"
               />
               <span>Tech Minds It Hub</span>
             </a>
