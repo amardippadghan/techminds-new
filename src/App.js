@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Overview from "./components/Pages/Overview";
 import ContactUs from './components/Pages/ContactUs';
 import DemoRegisterForm from './components/Forms/DemoRegisterForm';
+import CourseOverview from "./components/Pages/CourseOverview";
 
 function App() {
   const theme = useSelector((state) => state.theme.theme);
@@ -23,8 +24,7 @@ function App() {
           <Route path="/" element={<Overview />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/demoregisterform" element={<DemoRegisterForm />} />
-
-
+          <Route path="/course" element={<CourseOverview/>} />
         </Routes>
       </Router>
       <Footer />
