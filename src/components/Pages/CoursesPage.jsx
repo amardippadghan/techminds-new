@@ -12,39 +12,51 @@ const courses = [
     image: frontend,
     courseName: 'Front End Development',
     description: 'Learn the fundamentals of front end development including HTML, CSS, and JavaScript.',
-    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 6000'],
+    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 6000'],
+    courseID : 'course_002'
   },
   {
     image: backend,
     courseName: 'Back End Development',
     description: 'Dive into server-side programming with Node.js, databases, and APIs.',
-    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 6500'],
+    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 6500'],
+    courseID : 'course_003'
   },
   {
     image: mern,
     courseName: 'MERN Stack Development',
     description: 'Master MongoDB, Express, React, and Node.js to build full-stack applications.',
-    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 7000'],
+    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 7000'],
+    courseID : 'course_004'
   },
   {
-    image: salesforce,
-    courseName: 'Salesforce',
-    description: 'Get to know Salesforce and how to use its tools for customer relationship management.',
-    pointCourse: ['Four Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 8000'],
+    image: 'https://img-c.udemycdn.com/course/750x422/2492962_f098.jpg', // Example image URL for Web Development
+    courseName: 'Web Development Course',
+    description: 'Learn the basics of web development with HTML, CSS, and JavaScript.',
+    pointCourse: ['Two Months', 'Monday to Friday', 'Saturday : Quiz', 'Sunday : Project', 'Fee : 5000'],
+    courseID : 'course_001'
   },
-  {
-    image: crm,
-    courseName: 'CRM Training',
-    description: 'Understand customer relationship management systems and how to implement them effectively.',
-    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 6000'],
-  },
-  {
-    image: salesforcecrm,
-    courseName: 'Salesforce + CRM Training',
-    description: 'Combine Salesforce skills with CRM training to optimize your business processes.',
-    pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quize ', 'Sunday : Program test', 'Fee : 6000'],
-  },
+  // Uncomment and add more courses here if needed
+  // {
+  //   image: salesforce,
+  //   courseName: 'Salesforce',
+  //   description: 'Get to know Salesforce and how to use its tools for customer relationship management.',
+  //   pointCourse: ['Four Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 8000'],
+  // },
+  // {
+  //   image: crm,
+  //   courseName: 'CRM Training',
+  //   description: 'Understand customer relationship management systems and how to implement them effectively.',
+  //   pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 6000'],
+  // },
+  // {
+  //   image: salesforcecrm,
+  //   courseName: 'Salesforce + CRM Training',
+  //   description: 'Combine Salesforce skills with CRM training to optimize your business processes.',
+  //   pointCourse: ['Three Months', 'Monday to Sunday', 'Saturday : Quiz', 'Sunday : Program test', 'Fee : 6000'],
+  // },
 ];
+
 
 const CoursesPage = () => {
   return (
@@ -60,6 +72,7 @@ const CoursesPage = () => {
             courseName={course.courseName}
             description={course.description}
             pointCourse={course.pointCourse}
+            courseID={course.courseID}
           />
         ))}
       </div>

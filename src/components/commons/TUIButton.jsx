@@ -10,7 +10,7 @@ const TUIButton = ({
   return (
     <button
       type={type}
-      className={`${className} responsive-button`}
+      className={`${className} responsive-button px-4 rounded-lg`}
       onClick={onClick}
     >
       {text}

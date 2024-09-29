@@ -1,7 +1,7 @@
 import React from "react";
 import TUIButton from './TUIButton';
 
-const TUICourseCard = ({ image, courseName, description, pointCourse }) => {
+const TUICourseCard = ({ image, courseName, description, pointCourse , courseID }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-purple-400 border border-purple-400  rounded-lg">
       <figure className="overflow-hidden rounded-t-sm">
@@ -23,10 +23,14 @@ const TUICourseCard = ({ image, courseName, description, pointCourse }) => {
         </ul>
         <div className="card-actions flex justify-center">
           <div>
-            <TUIButton text="Enroll Now" />
+            <TUIButton text="Enroll Now" onClick={()=>{
+              window.open("https://forms.gle/SEhVU4mjxSJuXueH8", "_blank");
+            }} />
           </div>
           <div>
-            <TUIButton text="Read More" />
+            <TUIButton text="Read More" onClick={()=>{
+              window.location.href = `/course/${courseID}`;
+            }}/>
           </div>
 
         </div>

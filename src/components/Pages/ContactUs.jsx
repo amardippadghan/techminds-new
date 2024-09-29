@@ -23,13 +23,13 @@ function ContactUs() {
                 <div className='p-4'>
                     <div className='m-10'>
                         <TUICard
-                            title="Phone No : 7894561230"
+                            title="Phone No :       7517059705"
                             icon={<i className="fas fa-phone-alt"></i>}
                         />
                     </div>
                     <div className='m-10'>
                         <TUICard
-                            title="Email : amar17@gmail.com"
+                            title="Email : amardippadghan@gmail.com"
                             icon={<i className="fas fa-envelope"></i>}
                         />
                     </div>

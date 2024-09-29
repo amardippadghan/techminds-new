@@ -24,7 +24,7 @@ function App() {
           <Route path="/" element={<Overview />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/demoregisterform" element={<DemoRegisterForm />} />
-          <Route path="/course" element={<CourseOverview/>} />
+          <Route path="/course/:id" element={<CourseOverview/>} />
         </Routes>
       </Router>
       <Footer />

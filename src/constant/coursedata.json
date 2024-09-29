@@ -1,0 +1,108 @@
+[
+    {
+        "id": "course_001",
+        "title": "Web Development Course",
+        "description": "Learn the basics of web development with HTML, CSS, and JavaScript.",
+        "image": "https://img-c.udemycdn.com/course/750x422/2492962_f098.jpg",
+        "duration": "2 months",
+        "originalPrice": 3499,
+        "price": 2499,
+        "overview": "This course covers the core concepts of web development using HTML, CSS, and JavaScript. It's designed for beginners looking to build static and dynamic websites.",
+        "learningPoints": [
+            "Understand the structure of HTML documents",
+            "Master CSS for styling and layout",
+            "Learn JavaScript basics for interactivity",
+            "Implement Tailwind CSS for styling",
+            "Build responsive websites using media queries",
+            "Implement basic web forms and user input handling"
+        ],
+        "schedule": {
+            "Monday": "Online Lecture",
+            "Tuesday": "Online Lecture",
+            "Wednesday": "Online Lecture",
+            "Thursday": "Online Lecture",
+            "Friday": "Online Lecture",
+            "Saturday": "Aptitude Test",
+            "Sunday": "Programming Test"
+        }
+    },
+    {
+        "id": "course_002",
+        "title": "Frontend Development Course",
+        "description": "Master frontend development with HTML, CSS, JavaScript, React.js, and Redux.",
+        "image": "https://img-b.udemycdn.com/course/750x422/5178116_6858.jpg",
+        "duration": "3 months",
+        "originalPrice": 7499,
+        "price": 5999,
+        "overview": "This course covers everything you need to become a proficient frontend developer, from the basics of HTML and CSS to building interactive user interfaces with React.js.",
+        "learningPoints": [
+            "Master HTML and semantic markup",
+            "Learn advanced CSS and Flexbox/Grid layout",
+            "Understand JavaScript ES6+ concepts",
+            "Develop React.js components",
+            "Manage state with Redux"
+        ],
+        "schedule": {
+            "Monday": "Online Lecture",
+            "Tuesday": "Online Lecture",
+            "Wednesday": "Online Lecture",
+            "Thursday": "Online Lecture",
+            "Friday": "Online Lecture",
+            "Saturday": "Aptitude Test",
+            "Sunday": "Programming Test"
+        }
+    },
+    {
+        "id": "course_003",
+        "title": "Backend Development Course",
+        "description": "Learn backend development with JavaScript, Node.js, Express, and MongoDB.",
+        "image": "https://img-b.udemycdn.com/course/750x422/4383266_d1bc.jpg",
+        "duration": "3 months",
+        "originalPrice": 8499,
+        "price": 6999,
+        "overview": "This course teaches backend development using JavaScript, focusing on Node.js for server-side programming, Express.js for building APIs, and MongoDB for database management.",
+        "learningPoints": [
+            "Learn the fundamentals of Node.js",
+            "Understand asynchronous programming with JavaScript",
+            "Build RESTful APIs using Express.js",
+            "Manage databases with MongoDB",
+            "Deploy backend applications"
+        ],
+        "schedule": {
+            "Monday": "Online Lecture",
+            "Tuesday": "Online Lecture",
+            "Wednesday": "Online Lecture",
+            "Thursday": "Online Lecture",
+            "Friday": "Online Lecture",
+            "Saturday": "Aptitude Test",
+            "Sunday": "Programming Test"
+        }
+    },
+    {
+        "id": "course_004",
+        "title": "MERN Stack Development Course",
+        "description": "Build full-stack applications using MongoDB, Express.js, React.js, and Node.js.",
+        "image": "https://www.srishticampus.com/packageImages/0_GKIyAWHbKbANm7d9.png",
+        "duration": "4 months",
+        "originalPrice": 14999,
+        "price": 10499,
+        "overview": "This comprehensive course covers the MERN stack, teaching you how to create dynamic web applications with MongoDB for the database, Express.js for the backend framework, React.js for the frontend, and Node.js for server-side development.",
+        "learningPoints": [
+            "Understand the MERN stack architecture",
+            "Build RESTful APIs with Express.js",
+            "Connect MongoDB databases to applications",
+            "Create interactive UIs with React.js",
+            "Implement user authentication and authorization",
+            "Deploy full-stack applications"
+        ],
+        "schedule": {
+            "Monday": "Online Lecture",
+            "Tuesday": "Online Lecture",
+            "Wednesday": "Online Lecture",
+            "Thursday": "Online Lecture",
+            "Friday": "Online Lecture",
+            "Saturday": "Project Work",
+            "Sunday": "Code Review"
+        }
+    }
+]

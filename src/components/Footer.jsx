@@ -18,18 +18,20 @@ function Footer() {
       </nav>
       <nav>
         <h6 className="footer-title">Courses</h6>
-        <a className="link link-hover">Frontend Developmet</a>
-        <a className="link link-hover">Backend Developmet</a>
-        <a className="link link-hover">MERN Stack Developmet</a>
-        <a className="link link-hover">Salesforce</a>
+        <a className="link link-hover" href='/course/course_001'>Web Developmet</a>
+        <a className="link link-hover"href='/course/course_002'>Frontend Developmet</a>
+        <a className="link link-hover" href='/course/course_003'>Backend Developmet</a>
+        <a className="link link-hover" href='/course/course_004'>MERN Stack Developmet</a>
+
+        {/* <a className="link link-hover">Salesforce</a>
         <a className="link link-hover">CRM training</a>
-        <a className="link link-hover">Salesforce + CRM training </a>
+        <a className="link link-hover">Salesforce + CRM training </a> */}
 
       </nav>
       <nav>
         <h6 className="footer-title">Contact Us</h6>
-        <a className="link link-hover">Phone No :</a>
-        <a className="link link-hover">Email : </a>
+        <a className="link link-hover">Phone No : 7517059705</a>
+        <a className="link link-hover">Email : amardippadghan@gmailcom </a>
 
       </nav>
       <aside>
